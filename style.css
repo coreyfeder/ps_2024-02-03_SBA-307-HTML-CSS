@@ -1,3 +1,63 @@
+:root {
+    /* CSS HEX */
+    /* --lion: #BD9A5Eff;
+    --golden-brown: #997434ff;
+    --wheat: #ead4aeff;
+    --khaki: #C9B99Dff; */
+    
+    /* CSS HSL */
+    --lion: hsla(38, 42%, 55%, 1);
+    --golden-brown: hsla(38, 49%, 40%, 1);
+    --wheat: hsla(38, 59%, 80%, 1);
+    --khaki: hsla(38, 29%, 70%, 1);
+
+    --color-main: rgb(207, 197, 121);
+    --color-secondary: rgb(142, 133, 97);
+    --color-tertiary: rgb(68, 63, 47);
+    --color-text: rgb(43, 41, 37);
+
+    --lookatme1: hsl(0, 100%, 50%);
+    --lookatme1b: hsl(0, 100%, 87%);
+    --lookatme2: hsl(120, 50%, 50%);
+    --lookatme2b: hsl(120, 50%, 87%);
+    --lookatme3: hsl(39, 100%, 50%);
+    --lookatme3b: hsl(39, 100%, 87%);
+    --lookatme4: hsl(300, 100%, 50%);
+    --lookatme4b: hsl(300, 100%, 87%);
+}
+
 * {
     box-sizing: border-box;
+    min-height: 1em;
+}
+
+html {
+    border: 2pt solid var(--lookatme1);
+    background-color: var(--lookatme1b);
+    max-width: 900px;
+}
+
+body {
+    border: 2pt dashed var(--lookatme2);
+    background-color: var(--lookatme2b);
+    font-family: Roboto,Helvetica,sans-serif;
+    color: var(--color-text);
+}
+
+div {
+    border: 1pt dashed var(--lookatme3);
+    background-color: var(--lookatme3b);
+}
+
+#site {
+    display: flex;
+}
+
+#main {
+    flex: auto;
+}
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-flow: row;
 }
