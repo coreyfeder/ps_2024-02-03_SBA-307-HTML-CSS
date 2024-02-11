@@ -1,0 +1,27 @@
+* {
+    border: 1px black solid;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    /* width: 100%; */
+}
+
+/* html {
+    border: none;
+} */
+
+header, footer, #hero {
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.inline {
+    /* display: inline; */
+}
+
+.row > * {
+    width: 100%;
+}
+.row > * > * {
+    width: 100%;
+}
