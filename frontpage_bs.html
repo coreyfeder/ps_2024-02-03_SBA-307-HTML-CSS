@@ -7,35 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="frontpage_bs.css">
-    <title>Fams Frontpage</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Overlock&display=swap" rel="stylesheet">
+    <title>FamiliarFinder</title>
 </head>
 
 <body>
-    <div class="access-element"><a href="#main-content">Skip to main content</a></div>
-
     <div class="container">
+        <div class="access-element"><a href="#main-content">Skip to main content</a></div>
 
-        <div class="row">
-            <div class="col-xs-12">
-                <header>Header</header>
+        <!-- begin visible content -->
+        <ul class="topnav">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="right"><a href="#about">About</a></li>
+        </ul>
+          
+
+        <div id="header-row" class="row" role="banner" style="">
+            <div class="col-xs-12" style="">
+                <header style="">FamiliarFinder</header>
             </div>
         </div>
 
-        <div class="row">
-            <div id="hero" class="col-xs-12 col-md-12">
-                <h1 id="hero-image">Hero Image</h1>
+        <div id="hero" class="row" style="">
+            <div class="col-xs-12 col-md-12" style="">
+                <img src="img/Minsc-And-Boo-head.jpg" alt="Heroic barbarian Minsc holds aloft his trusty chipmunk familiar Boo." style="">
             </div>
         </div>
 
-        <main id="main-content">
+        <main id="main-content" style="">
 
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 id="intro-and-main-pitch">Intro and Main Pitch</h1>
-                    <p>Maybe I can figure out Bootstrap by using it to make the front page.</p>
+            <div class="row" style="">
+                <div class="col-xs-12" style="">
+                    <h1 id="main-pitch" style="">Find Familiar</h1>
+                    <p style="">Why is it so hard to get this level 1 spell right?</p>
+                    <p style="">Fleeing combat eating party rations, scrapping with other familiars. Misbehaving familiars can be more than just an inconvenience; it can endanger the life of your party.</p>
                 </div>
             </div>
 
@@ -82,11 +94,14 @@
         <footer>
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 id="footer">Footer</h1>
+                    <p id="footer">Note: Familiars are independent contractors and not subject to Labor Law or Occupational Health and Safety requirements.</p>
                 </div>
             </div>
         </footer>
     </div>
+
+    <!-- end visible content -->
+
     <!-- Remove any unneeded Javascript -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
