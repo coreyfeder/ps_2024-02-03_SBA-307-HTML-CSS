@@ -3,8 +3,9 @@
     border: 1px black solid;
     box-sizing: border-box;
     font-family: "Overlock", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 0;
     margin: 0;
 }
@@ -22,8 +23,17 @@ img {
 
 p {
     padding: 0 10px;
-    /* padding-left: 10px; */
-    /* padding-right: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border: red solid 1px;
+}
+
+em {
+    font-family: inherit;
+}
+
+#hero {
+    padding: 0;
 }
 
 header {
@@ -36,15 +46,33 @@ header {
 
 .container {
     border: 1px black solid;
+    /* .container adds 15px side margins. I may override that. */
     /* padding: 0; */
-    /* margin: 0; */
 }            
 
+#main-pitch {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+}
 
-/* .row {} */
-/* .prop {} */
+
+.row {
+    margin: 0;
+}
+.row div {
+    padding: 0;
+}
+
+.proposition, .proposition div {
+    padding-top: 10px;
+    text-align: left;
+}
 /* .prop-right {} */
 /* .prop-left {} */
+.proposition img {
+    height:300px;
+    width: fit-content;
+}    
+
 
 
 .access-element, .access-element > * {
@@ -68,11 +96,7 @@ header {
     font-size: smaller;
     font-style: italic;
     /* border: none; */
-}
-
-#main-pitch {
-    font-family: "Aclonica", Arial, Helvetica, sans-serif;
-}
+}    
 
 .aclonica-regular {
     font-family: "Aclonica", sans-serif;
