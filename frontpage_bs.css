@@ -7,12 +7,25 @@
     width: 100%;
     max-width: 1200px;
     padding: 0;
-    margin: 0;
+    /* margin: 0; */
 }
+
+h1,
+h2,
+h3,
+p {
+  font-size: clamp(
+    var(--fluid-type-min, 1vh),
+    calc(1rem + var(--fluid-type-target, 3vw)),
+    var(--fluid-type-max, 100vw)
+  );
+}
+
 
 html {
 }
 body {
+    /* font-size: 100%; */
 }
 
 img {
@@ -48,6 +61,7 @@ header {
     border: 1px black solid;
     /* .container adds 15px side margins. I may override that. */
     /* padding: 0; */
+    margin: 0;
 }            
 
 #main-pitch {
@@ -56,7 +70,7 @@ header {
 
 
 .row {
-    margin: 0;
+    /* margin: 0; */
 }
 .row div {
     padding: 0;
